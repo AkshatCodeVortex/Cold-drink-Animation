@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="cold.css">
+
+
+    <body>
+        <section class="sec">
+            <header>
+                <a href="#"><img src="logo.png" alt="logo"></a>
+                <ul>
+
+                    <li>
+                        <a href="#">HOME</a>
+
+
+                        <a href="#">PRODUCTS</a>
+
+
+                        <a href="#">WHATS NEWS</a>
+
+
+                        <a href="#">NEWS LETTER</a>
+
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <button type="button" class="navbar-toggle" data-trggle="collapse" data-target="">
+                   <samp class="icon-button"></samp>
+                   <samp class="icon-button"></samp>
+                   <samp class="icon-button"></samp>
+                </button>
+
+                </ul>
+            </header>
+            <div class="context">
+                <div class="textbox">
+                    <h2>
+                        That's What <br> I Like
+                    </h2>
+                    <p>
+                        To Merge or Not to Merge, That is the Question. A little history: The Coca-Cola Company (KO)<br> spun off Coca-Cola Enterprises (CCE) in 1986. PepsiCo. (PEP)
+                        <br> followed the same course of action when Pepsi Bottling Group (PBG) was formed in 1997
+                    </p>
+                    <div class="all">
+                        <a href="http://www.pepsicoindia.co.in">All PRODUCTS</a>
+                        <a href="http://wa.me/919711728066">CONTACT US ON WHATSAPP</a>
+                    </div>
+                </div>
+                <div class="imgbox">
+                    <img src="pepsi001.png" class="pepsi">
+                </div>
+            </div>
+            <ul class="thumb" style="text-decoration: none;">
+              <li>
+                    <img src="pepsi001.png" onmouseover="imgslider('pepsi001.png');changebgcolor('#0062be')">
+
+                    <img src="pepsi002.png " onmouseover="imgslider( 'pepsi002.png');changebgcolor('#D31028')">
+
+                    <img src="pepsi003.png " onmouseover="imgslider( 'pepsi003.png');changebgcolor('#1e1e1e')">
+                </li>
+            </ul>
+
+        </section>
+        <script text="text/javascript ">
+            function imgslider(anything) {
+                document.querySelector('.pepsi').src = anything;
+            }
+
+            function changebgcolor(color) {
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
+        </script>
+
+    </body>
+
+</html>
